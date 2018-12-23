@@ -26,7 +26,7 @@
             xs12
             md4
           >
-            <course-card />
+            <course-card :course="course"/>
           </v-flex>
         </v-layout>
       </v-container>
@@ -37,10 +37,18 @@
 <script>
 import Logo from '~/components/Logo.vue'
 import CourseCard from '~/components/course/CourseCard'
+
 export default {
   components: {
     Logo,
     CourseCard
+  },
+  data() {
+    return {
+      course: {
+        title: 'This is a course'
+      }
+    }
   }
 }
 </script>
