@@ -26,7 +26,7 @@
             xs12
             md4
           >
-            <course-card :course="course"/>
+            <course-card :course="course" />
           </v-flex>
         </v-layout>
       </v-container>
@@ -38,6 +38,8 @@
 import Logo from '~/components/Logo.vue'
 import CourseCard from '~/components/course/CourseCard'
 
+import CoursesQuery from '~/graphql/queries/courses'
+
 export default {
   components: {
     Logo,
@@ -47,7 +49,13 @@ export default {
     return {
       course: {
         title: 'This is a course'
-      }
+      },
+      courses: []
+    }
+  },
+  apollo: {
+    courses: {
+      query: CoursesQuery
     }
   }
 }
