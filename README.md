@@ -2,6 +2,10 @@
 
 > SSR for FilosofiKode
 
+## Env Setup
+- Copy `.env.example` and rename it to `.env`
+- Adjust environment variable
+
 ## Build Setup
 
 ``` bash
