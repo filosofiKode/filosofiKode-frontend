@@ -10,7 +10,11 @@
       md6
     >
       <div class="text-xs-center">
-        <logo />
+        <img 
+          src="~/static/logo-filosofi-kode-square-transparent.png"
+          alt="Folosofi Kode logo"
+          width="200px"
+        >
       </div>
       <v-container
         fluid
@@ -21,12 +25,13 @@
           wrap
         >
           <v-flex
-            v-for="i in 6"
-            :key="i"
+            v-for="course in courses"
+            :key="course._id"
             xs12
             md4
           >
-            <course-card :course="course" />
+            <course-card
+              :course="course" />
           </v-flex>
         </v-layout>
       </v-container>
@@ -35,21 +40,16 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 import CourseCard from '~/components/course/CourseCard'
 
 import CoursesQuery from '~/graphql/queries/courses'
 
 export default {
   components: {
-    Logo,
     CourseCard
   },
   data() {
     return {
-      course: {
-        title: 'This is a course'
-      },
       courses: []
     }
   },
