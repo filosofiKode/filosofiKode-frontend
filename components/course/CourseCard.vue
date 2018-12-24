@@ -8,7 +8,7 @@
     <v-card-title primary-title>
       <div>
         <div class="headline">{{ course.title }}</div>
-        <span class="grey--text">1,000 miles of wonder</span>
+        <span class="grey--text">{{ course.description }}</span>
       </div>
     </v-card-title>
 

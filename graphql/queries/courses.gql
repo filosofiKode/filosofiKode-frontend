@@ -1,5 +1,7 @@
 {
   courses {
+    _id
     title
+    description
   }
 }
