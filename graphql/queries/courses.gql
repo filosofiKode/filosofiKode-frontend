@@ -1,4 +1,4 @@
-{
+query Courses {
   courses {
     _id
     title
