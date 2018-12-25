@@ -32,20 +32,24 @@
 <script>
 import CourseCard from '~/components/course/CourseCard'
 
-import CoursesQuery from '~/graphql/queries/courses'
+import coursesQuery from '~/graphql/queries/courses'
 
 export default {
   components: {
     CourseCard
   },
+  async asyncData({ app }) {
+    let client = app.apolloProvider.defaultClient
+    let { data } = await client.query({
+      query: coursesQuery
+    })
+    return {
+      courses: data.courses
+    }
+  },
   data() {
     return {
       courses: []
-    }
-  },
-  apollo: {
-    courses: {
-      query: CoursesQuery
     }
   }
 }
