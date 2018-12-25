@@ -1,0 +1,16 @@
+query Course($slug: String!) {
+  courses(where: {
+    slug: $slug
+  }, 
+  limit: 1) {
+    _id
+    title
+    description
+    slug
+    instructors {
+      _id
+      name
+      bio
+    }
+  }
+}
