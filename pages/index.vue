@@ -1,42 +1,32 @@
 <template>
-  <v-layout
-    column
-    justify-center
-    align-center
-  >
-    <v-flex
-      xs12
-      sm8
-      md6
-    >
-      <div class="text-xs-center">
-        <img 
-          src="~/static/logo-filosofi-kode-square-transparent.png"
-          alt="Folosofi Kode logo"
-          width="200px"
-        >
-      </div>
-      <v-container
-        fluid
-        grid-list-lg
+  <div>
+    <div class="text-xs-center">
+      <img 
+        src="~/static/logo-filosofi-kode-square-transparent.png"
+        alt="Folosofi Kode logo"
+        width="200px"
       >
-        <v-layout
-          row
-          wrap
+    </div>
+    <v-container
+      fluid
+      grid-list-lg
+    >
+      <v-layout
+        row
+        wrap
+      >
+        <v-flex
+          v-for="course in courses"
+          :key="course._id"
+          xs12
+          md4
         >
-          <v-flex
-            v-for="course in courses"
-            :key="course._id"
-            xs12
-            md4
-          >
-            <course-card
-              :course="course" />
-          </v-flex>
-        </v-layout>
-      </v-container>
-    </v-flex>
-  </v-layout>
+          <course-card
+            :course="course" />
+        </v-flex>
+      </v-layout>
+    </v-container>
+  </div>
 </template>
 
 <script>
