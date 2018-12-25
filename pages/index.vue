@@ -32,7 +32,7 @@
 <script>
 import CourseCard from '~/components/course/CourseCard'
 
-import coursesQuery from '~/graphql/queries/courses'
+import coursesQuery from '~/graphql/queries/courses/index'
 
 export default {
   components: {

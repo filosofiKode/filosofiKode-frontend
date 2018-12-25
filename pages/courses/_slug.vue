@@ -5,7 +5,7 @@
   </div>
 </template>
 <script>
-import courseBySlugQuery from '~/graphql/queries/course-by-slug'
+import courseBySlugQuery from '~/graphql/queries/courses/by-slug'
 export default {
   data() {
     return {
