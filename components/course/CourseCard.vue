@@ -1,5 +1,5 @@
 <template>
-  <v-card href="/courses/">
+  <v-card :to="{ name: 'courses-slug', params: { slug: course.slug }}">
     <v-img
       src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
       height="200px"

@@ -3,5 +3,6 @@
     _id
     title
     description
+    slug
   }
 }
