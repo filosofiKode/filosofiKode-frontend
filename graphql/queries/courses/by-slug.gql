@@ -12,5 +12,9 @@ query Course($slug: String!) {
       name
       bio
     }
+    lessons {
+      _id
+      title
+    }
   }
 }
