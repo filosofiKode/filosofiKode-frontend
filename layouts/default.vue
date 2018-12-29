@@ -29,13 +29,22 @@
       app
     >
       <v-toolbar-side-icon @click="drawer = !drawer" />
-      <v-toolbar-title v-text="title" />
+      <nuxt-link :to="'/'">
+        <img 
+          src="https://res.cloudinary.com/filosofikode/image/upload/v1546074073/logo-filosofi-kode-square-transparent-48-48.png" 
+          alt="Logo Filosofi Kode">
+      </nuxt-link>
+      <nuxt-link 
+        :to="'/'"
+        style="text-decoration: none;">
+        <v-toolbar-title 
+          class="hidden-xs-only pt-2 pl-2"
+          v-text="title" />
+
+      </nuxt-link>
       <v-spacer />
       <v-btn icon>
         <v-icon>search</v-icon>
-      </v-btn>
-      <v-btn icon>
-        <v-icon>favorite</v-icon>
       </v-btn>
       <v-btn icon>
         <v-icon>more_vert</v-icon>
@@ -59,7 +68,7 @@
       </v-container>
     </v-content>
     <v-footer app>
-      <span>&copy; 2018</span>
+      <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
 </template>
