@@ -1,6 +1,6 @@
 <template>
   <v-list 
-    v-if="!lessons"
+    v-if="isLessonExist"
     two-line>
     <v-subheader>
       Playlist
@@ -24,12 +24,19 @@
   </v-list>
 </template>
 <script>
+import _isEmpty from 'lodash/isEmpty'
+
 export default {
   name: 'LessonList',
   props: {
     lessons: {
       type: Array,
       required: true
+    }
+  },
+  computed: {
+    isLessonExist() {
+      return !_isEmpty(this.lessons)
     }
   }
 }
