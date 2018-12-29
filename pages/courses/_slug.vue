@@ -1,12 +1,45 @@
 <template>
-  <div>
-    <h1>{{ course.title }}</h1>
-    <span>oleh {{ course.instructors[0].name }}</span>
-  </div>
+  <v-container
+    grid-list-md
+    text-xs-center
+  >
+    <v-layout
+      row
+      wrap>
+      <v-flex xs12>
+        <h1>{{ course.title }}</h1>
+        <span>oleh {{ course.instructors[0].name }}</span>
+      </v-flex>
+    </v-layout>
+    <v-layout
+      row
+      fill-width
+    >
+      <v-flex
+        xs12
+        md8
+      >
+        <h2>YouTube</h2>
+
+      </v-flex>
+      <v-flex
+        d-flex
+        xs12
+        sm4
+      >
+        <lesson-list-widget :lessons="course.lessons"/>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 <script>
+import LessonListWidget from '~/components/course/widget/LessonList'
 import courseBySlugQuery from '~/graphql/queries/courses/by-slug'
+
 export default {
+  components: {
+    LessonListWidget
+  },
   data() {
     return {
       course: {}
