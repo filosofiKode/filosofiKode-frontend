@@ -33,12 +33,12 @@
   </v-container>
 </template>
 <script>
-import LessonListWidget from '~/components/course/widget/LessonList'
+import LessonPlaylist from '~/components/lesson/LessonPlaylist'
 import courseBySlugQuery from '~/graphql/queries/courses/by-slug'
 
 export default {
   components: {
-    LessonListWidget
+    LessonPlaylist
   },
   data() {
     return {
