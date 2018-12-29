@@ -1,5 +1,7 @@
 <template>
-  <v-list two-line>
+  <v-list 
+    v-if="!lessons"
+    two-line>
     <v-subheader>
       Playlist
     </v-subheader>
