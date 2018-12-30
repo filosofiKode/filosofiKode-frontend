@@ -1694,6 +1694,10 @@ big.js@^3.1.3:
   version "3.2.0"
   resolved "https://npm.bukalapak.io/big.js/-/big.js-3.2.0.tgz#a5fc298b81b9e0dca2e458824784b65c52ba588e"
 
+big.js@^5.2.2:
+  version "5.2.2"
+  resolved "https://npm.bukalapak.io/big.js/-/big.js-5.2.2.tgz#65f0af382f578bcdc742bd9c281e9cb2d7768328"
+
 binary-extensions@^1.0.0:
   version "1.12.0"
   resolved "https://npm.bukalapak.io/binary-extensions/-/binary-extensions-1.12.0.tgz#c2d780f53d45bba8317a8902d4ceeaf3a6385b14"
@@ -1968,8 +1972,8 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000910, caniuse-lite@^1.0.30000918, caniuse-lite@^1.0.30000921:
-  version "1.0.30000923"
-  resolved "https://npm.bukalapak.io/caniuse-lite/-/caniuse-lite-1.0.30000923.tgz#148f9bda508024b5ce957b463ae2e8302b451bb2"
+  version "1.0.30000925"
+  resolved "https://npm.bukalapak.io/caniuse-lite/-/caniuse-lite-1.0.30000925.tgz#f1a3b9aae2a83071b1eccfa39959d72440409b08"
 
 capture-stack-trace@^1.0.0:
   version "1.0.1"
@@ -2273,8 +2277,8 @@ core-js@^2.5.7:
   resolved "https://npm.bukalapak.io/core-js/-/core-js-2.6.1.tgz#87416ae817de957a3f249b3b5ca475d4aaed6042"
 
 core-js@^3.0.0-beta.3:
-  version "3.0.0-beta.6"
-  resolved "https://npm.bukalapak.io/core-js/-/core-js-3.0.0-beta.6.tgz#f1ee6c8bd9c1941f992fda01f886b3b40ceb1510"
+  version "3.0.0-beta.7"
+  resolved "https://npm.bukalapak.io/core-js/-/core-js-3.0.0-beta.7.tgz#d8bc953adc4805e81dbfc73c18050f6ca78d547b"
 
 core-util-is@~1.0.0:
   version "1.0.2"
@@ -2972,8 +2976,8 @@ eslint-visitor-keys@^1.0.0:
   resolved "https://npm.bukalapak.io/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
 
 eslint@^5.0.1:
-  version "5.11.0"
-  resolved "https://npm.bukalapak.io/eslint/-/eslint-5.11.0.tgz#51a0e70f137a425fe044cd48273b96f28a774b1f"
+  version "5.11.1"
+  resolved "https://npm.bukalapak.io/eslint/-/eslint-5.11.1.tgz#8deda83db9f354bf9d3f53f9677af7e0e13eadda"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.5.3"
@@ -3329,8 +3333,8 @@ flush-write-stream@^1.0.0:
     readable-stream "^2.0.4"
 
 follow-redirects@^1.0.0, follow-redirects@^1.3.0:
-  version "1.5.10"
-  resolved "https://npm.bukalapak.io/follow-redirects/-/follow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
+  version "1.6.0"
+  resolved "https://npm.bukalapak.io/follow-redirects/-/follow-redirects-1.6.0.tgz#d12452c031e8c67eb6637d861bfc7a8090167933"
   dependencies:
     debug "=3.1.0"
 
@@ -4169,6 +4173,12 @@ json5@^0.5.0:
   version "0.5.1"
   resolved "https://npm.bukalapak.io/json5/-/json5-0.5.1.tgz#1eade7acc012034ad84e2396767ead9fa5495821"
 
+json5@^1.0.1:
+  version "1.0.1"
+  resolved "https://npm.bukalapak.io/json5/-/json5-1.0.1.tgz#779fb0018604fa854eacbf6252180d83543e3dbe"
+  dependencies:
+    minimist "^1.2.0"
+
 json5@^2.1.0:
   version "2.1.0"
   resolved "https://npm.bukalapak.io/json5/-/json5-2.1.0.tgz#e7a0c62c48285c628d20a10b85c89bb807c32850"
@@ -4267,12 +4277,12 @@ loader-utils@^0.2.16:
     object-assign "^4.0.1"
 
 loader-utils@^1.0.2, loader-utils@^1.1.0:
-  version "1.1.0"
-  resolved "https://npm.bukalapak.io/loader-utils/-/loader-utils-1.1.0.tgz#c98aef488bcceda2ffb5e2de646d6a754429f5cd"
+  version "1.2.3"
+  resolved "https://npm.bukalapak.io/loader-utils/-/loader-utils-1.2.3.tgz#1ff5dc6911c9f0a062531a4c04b609406108c2c7"
   dependencies:
-    big.js "^3.1.3"
+    big.js "^5.2.2"
     emojis-list "^2.0.0"
-    json5 "^0.5.0"
+    json5 "^1.0.1"
 
 locate-path@^2.0.0:
   version "2.0.0"
@@ -4902,8 +4912,8 @@ p-limit@^1.1.0:
     p-try "^1.0.0"
 
 p-limit@^2.0.0:
-  version "2.0.0"
-  resolved "https://npm.bukalapak.io/p-limit/-/p-limit-2.0.0.tgz#e624ed54ee8c460a778b3c9f3670496ff8a57aec"
+  version "2.1.0"
+  resolved "https://npm.bukalapak.io/p-limit/-/p-limit-2.1.0.tgz#1d5a0d20fb12707c758a655f6bbc4386b5930d68"
   dependencies:
     p-try "^2.0.0"
 
@@ -6135,8 +6145,8 @@ send@0.16.2:
     statuses "~1.4.0"
 
 serialize-javascript@^1.3.0, serialize-javascript@^1.4.0, serialize-javascript@^1.5.0:
-  version "1.5.0"
-  resolved "https://npm.bukalapak.io/serialize-javascript/-/serialize-javascript-1.5.0.tgz#1aa336162c88a890ddad5384baebc93a655161fe"
+  version "1.6.1"
+  resolved "https://npm.bukalapak.io/serialize-javascript/-/serialize-javascript-1.6.1.tgz#4d1f697ec49429a847ca6f442a2a755126c4d879"
 
 serve-placeholder@^1.1.0:
   version "1.1.0"
@@ -6577,8 +6587,8 @@ term-size@^1.2.0:
     execa "^0.7.0"
 
 terser-webpack-plugin@^1.1.0:
-  version "1.2.0"
-  resolved "https://npm.bukalapak.io/terser-webpack-plugin/-/terser-webpack-plugin-1.2.0.tgz#24697213f2128009080f39f081c18cb2221d91ff"
+  version "1.2.1"
+  resolved "https://npm.bukalapak.io/terser-webpack-plugin/-/terser-webpack-plugin-1.2.1.tgz#7545da9ae5f4f9ae6a0ac961eb46f5e7c845cc26"
   dependencies:
     cacache "^11.0.2"
     find-cache-dir "^2.0.0"
@@ -7127,8 +7137,8 @@ webpack-sources@^1.1.0, webpack-sources@^1.3.0:
     source-map "~0.6.1"
 
 webpack@^4.26.1:
-  version "4.28.2"
-  resolved "https://npm.bukalapak.io/webpack/-/webpack-4.28.2.tgz#6b534a8bc91a45787ed631dc2e87aec94e9e4db7"
+  version "4.28.3"
+  resolved "https://npm.bukalapak.io/webpack/-/webpack-4.28.3.tgz#8acef6e77fad8a01bfd0c2b25aa3636d46511874"
   dependencies:
     "@webassemblyjs/ast" "1.7.11"
     "@webassemblyjs/helper-module-context" "1.7.11"
