@@ -13,21 +13,22 @@
     </v-layout>
     <v-layout
       row
-      fill-width
+      wrap
     >
       <v-flex
         xs12
         md8
       >
-        <h2>YouTube</h2>
-
+        <youtube 
+          :video-id="videoId"
+          fit-parent/>
       </v-flex>
       <v-flex
         d-flex
         xs12
         sm4
       >
-        <lesson-list-widget :lessons="course.lessons"/>
+        <lesson-playlist :lessons="course.lessons"/>
       </v-flex>
     </v-layout>
   </v-container>
@@ -42,7 +43,11 @@ export default {
   },
   data() {
     return {
-      course: {}
+      course: {},
+      videoId: 'lG0Ys-2d4MA',
+      playerVars: {
+        autoplay: 1
+      }
     }
   },
   async asyncData({ app, params }) {

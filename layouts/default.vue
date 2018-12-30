@@ -59,8 +59,6 @@
         >
           <v-flex
             xs12
-            sm8
-            md6
           >
             <nuxt />
           </v-flex>
