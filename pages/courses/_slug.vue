@@ -4,6 +4,7 @@
     text-xs-center
   >
     <v-layout
+      class="mb-3"
       row
       wrap>
       <v-flex xs12>
@@ -29,6 +30,19 @@
         sm4
       >
         <lesson-playlist :lessons="course.lessons"/>
+      </v-flex>
+    </v-layout>
+    <v-layout
+      class="mt-3 text-sm-left"
+      row
+      wrap>
+      <v-flex
+        class="white"
+        xs12
+        md8>
+        <p class="pa-2">
+          {{ course.description }}
+        </p>
       </v-flex>
     </v-layout>
   </v-container>
