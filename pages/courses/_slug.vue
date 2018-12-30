@@ -75,6 +75,18 @@ export default {
     return {
       course: data.courses[0] // we get the one and only data
     }
+  },
+  head() {
+    return {
+      title: `${this.course.title} - Filosofi Kode`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.course.description
+        }
+      ]
+    }
   }
 }
 </script>

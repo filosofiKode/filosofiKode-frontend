@@ -78,8 +78,8 @@ export default {
       clipped: true,
       drawer: false,
       items: [
-        { icon: 'apps', title: 'Welcome', to: '/' },
-        { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' }
+        { icon: 'apps', title: 'Kelas', to: '/' },
+        { icon: 'bubble_chart', title: 'Mentor', to: '/instructors' }
       ],
       right: true,
       title: 'Filosofi Kode'
